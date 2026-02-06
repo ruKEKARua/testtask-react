@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Monteserrat";
+    src: url("./fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("./fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+.main_text {
+    font-family: "Monteserrat";
+}
+
+.second_text {
+    font-family: "OpenSans";
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1440px;
+    height: 72px;
+    margin-top: 7px;
+    border-bottom: 1px solid black;
+}
+header .logo {
+    width: 54px;
+    height: 23px;
+    margin: 24px 0 0 72px;
+    background-image: url("./images/logo.svg");
+}
+header .header_buttons {
+    width: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+header .header_buttons .join_button {
+    margin-bottom: 5px;
+}
+header .header_buttons .join_button a {
+    display: block;
+    color: #FF685B;
+    width: 180px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    border: 2px solid #FF685B;
+    border-radius: 7px;
+}
