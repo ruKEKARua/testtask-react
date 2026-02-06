@@ -1,5 +1,7 @@
 import Header from './Components/Header/Header';
 import './UI/App.css';
+import Href from './UI/Components/Href/Href';
+import Top from './UI/Components/Top/Top';
 
 function App() {
     return (
@@ -9,12 +11,14 @@ function App() {
 
             <main>
 
+                <Top />
+
+
                 <div>
+
                     
-                    <h1 className='main_text'>Место для получения медицинской помощи</h1>
 
                 </div>
-                <div></div>
 
             </main>
 

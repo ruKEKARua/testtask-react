@@ -1,4 +1,5 @@
 import React from 'react'
+import Href from '../../UI/Components/Href/Href'
 
 const Header = () => {
   return (
@@ -6,23 +7,23 @@ const Header = () => {
 
         <div className='logo'>
         </div>
-    
+
         <div className='header_buttons'>
-    
+
             <div className='contacts_button second_text'>
-    
-                <a href="">Контакты</a>
-    
+
+                <Href text={'Контакты'} />
+
             </div>
-    
-            <div className='join_button main_text'>
-    
-                <a href="">Войти</a>
-    
+
+            <div className='join_button main_text_regular'>
+
+                <Href text={'Войти'} />
+
             </div>
-    
+
         </div>
-    
+
     </header>
   )
 }
