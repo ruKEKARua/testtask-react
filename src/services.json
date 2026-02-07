@@ -1,15 +1,21 @@
 [
     {
+        "id": "0",
         "title": "Онлайн-приём",
-        "description": "Рыба текст"
+        "description": "Рыба текст",
+        "imageName": "cardiogramma_img"
     },
     {
+        "id": "1",
         "title": "Лечение рака",
-        "description": "Рыба текст"
+        "description": "Рыба текст",
+        "imageName": "stetoscope_img"
     },
     {
+        "id": "2",
         "title": "Экстренный случай",
-        "description": "Рыба текст"
+        "description": "Рыба текст",
+        "imageName": "table_img"
     }
     
 ]

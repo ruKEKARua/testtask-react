@@ -2,59 +2,36 @@ import React from 'react'
 import H5 from '../UI/Components/H5/H5'
 import Paragrath from '../UI/Components/Paragrath/Paragrath'
 
+import services from '../services.json'
+
 const Bottom = () => {
-  return (
-    <div className='bottom'>
 
-        <div className='cardiogramma'>
+    return (
+        <div className='bottom'>
 
-            <div className='cardiogramma_img'></div>
+            {
+                services.map((element) => {
 
-            <div className='text_block'>
+                    return <div className='cardiogramma'>
 
-                <H5 text={'Онлайн-приём'}/>
+                        <div className={element.imageName}></div>
 
-                <div className='border'></div>
+                        <div className='text_block'>
 
-                <Paragrath text={'Рыба текст'} />
+                            <H5 text={element.title}/>
 
-            </div>
+                            <div className='border'></div>
 
-        </div>
+                            <Paragrath text={element.description} />
 
-        <div className='stetoscope'>
+                        </div>
 
-            <div className='stetoscope_img'></div>
+                    </div>
 
-            <div className='text_block'>
-
-                <h5 className='main_text_regular'>Экстренный Случай</h5>
-
-                <div className='border'></div>
-
-                <p className='second_text'>Рыба текст</p>
-
-            </div>
+                })
+            }
 
         </div>
-
-        <div className='table'>
-
-            <div className='table_img'></div>
-
-            <div className='text_block'>
-
-                <h5 className='main_text_regular'>Лечение рака</h5>
-
-                <div className='border'></div>
-
-                <p className='second_text'>Рыба текст</p>
-
-            </div>
-
-        </div>
-
-    </div>
   )
 }
 
