@@ -1,5 +1,5 @@
 import React from 'react'
-import Href from '../Href/Href'
+import Href from '../UI/Components/Href/Href'
 
 const Top = () => {
   return (
@@ -9,7 +9,7 @@ const Top = () => {
 
 
         <div className='buttons'>
-
+            
             <div className='join_button main_text_regular'>
                 <Href text={'Войти'} />
             </div>

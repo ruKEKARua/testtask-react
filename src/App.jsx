@@ -1,28 +1,25 @@
-import Header from './Components/Header/Header';
+import Header from './Components/Header';
 import './UI/App.css';
-import Href from './UI/Components/Href/Href';
-import Top from './UI/Components/Top/Top';
+import './UI/App-mobile.css';
+import Top from './Components/Top';
+import Bottom from './Components/Bottom';
 
 function App() {
     return (
         <div className="App">
-          
-            <Header />
+            <div className='wrapper'>
+                <Header />
 
-            <main>
+                <main>
 
-                <Top />
+                    <Top />
 
-
-                <div>
-
+                    <Bottom />
                     
 
-                </div>
+                </main>
 
-            </main>
-
-
+            </div>
 
         </div>
     );
